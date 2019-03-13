@@ -1,0 +1,28 @@
+*********************************************
+        Estruturas Lineares Sequenciais
+*********************************************
+
+
+1) Tipos de Dados
+
+    - Struct
+    - enum
+    - union
+
+2) Listas Lineares
+
+    - Pilha (stack)
+    - Fila (queue)
+    - Deque (double-ended queue)
+
+    Algoritimos FIFO , FILO
+
+
+*********************************************
+        __Pilha__
+*********************************************
+    - push (insercao)
+    - pop (remocao)
+
+
+
