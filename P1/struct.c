@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-typedef struct student{
+typedef struct {
     char name[100];
     int score;
 } student;
@@ -8,8 +8,9 @@ typedef struct student{
 int main(){
     student joao;
 
-    joao.name = "joao";
+    sprintf(joao.name, "joao");
     joao.score = 7;
+    printf("Student: %s\nScore: %i\n", joao.name, joao.score);
 
 }
 
