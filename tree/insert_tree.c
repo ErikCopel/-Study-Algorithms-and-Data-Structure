@@ -1,53 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-
-struct tree
-{
-    int valor;
-    struct tree *left; 
-    struct tree *right;
-};
-
-typedef struct tree tree;
-
-void printTree(tree* head);
-tree *insert(tree *head, int valor);
-
-int main(int argc, char const *argv[])
-{
-    tree *head = NULL;
-
-    head = insert(head, 10);
-    head = insert(head, 7);
-    head = insert(head, 2);
-    head = insert(head, 8);
-    head = insert(head, 1);
-    head = insert(head, 4);
-    head = insert(head, 3);
-    head = insert(head, 6);
-    head = insert(head, 9);
-    head = insert(head, 5);
-
-    printTree(head);
-    return 0;
-}
-
-void printTree(tree* head){
-    if (head != NULL){
-        printTree(head->left);
-        printf("%d ", head->valor);
-        printTree(head->right);
-    }
-}
-
+#include "Tree_tools.h"
 
 /*
 ***************************************
 Insere um novo node de maneira ordenada
 ***************************************
 - Percorre a arvore desde o inicio;
-- Compara os valores ate encontrar a possicao 
+- Compara os valores ate encontrar a posicao 
 correta para inserir o novo node (quando head == NULL);
 - Insere o novo node.
 */
